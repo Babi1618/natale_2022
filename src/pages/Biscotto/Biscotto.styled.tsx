@@ -12,10 +12,11 @@ export const StyledPaginaBiscotto = styled.div`
 
 export const StyledBiscottoContainer = styled.div`
   width: 100%;
-  position: relative
+  position: relative;
 `;
 export const StyledBiscottoImg = styled.img`
   width: auto;
   height: 100%;
   max-width: 100%;
+  margin-top: -50px;
 `;

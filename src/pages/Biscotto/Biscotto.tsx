@@ -17,7 +17,7 @@ export const PaginaBiscotto = ({ user }: any) => {
       <StyledPaginaBiscotto>
         <StyledModalText>
           {!isBiscottoOpen
-            ? `${user.name} clicca sul tuo biscotto per vedere cosa ha in serbo per te`
+            ? `${user.name} clicca sul tuo biscotto per vedere cosa ha in serbo per te il 2023!`
             : `Bene! Clicca sul biglietto per leggere il tuo messaggio!`}
         </StyledModalText>
         <StyledBiscottoContainer>

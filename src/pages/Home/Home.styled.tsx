@@ -46,6 +46,7 @@ export const StyledImage = styled.img`
   left: 0;
   right: 0;
   margin: auto;
+  height: 100%;
 `;
 export const StyledText = styled.div`
   margin-top: 40px;
@@ -53,9 +54,11 @@ export const StyledText = styled.div`
   font-size: 24px;
   font-weight: 500;
   text-transform: uppercase;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 `;
-export const StyledFormContainer = styled.div``; //barbara TODO-serve?
-export const StyledLabel = styled.div``; //barbara TODO-serve?
+export const StyledFormContainer = styled.div``;
+export const StyledLabel = styled.div``;
 export const StyledInput = styled.input`
   border: none;
   border-bottom: 2px solid white;

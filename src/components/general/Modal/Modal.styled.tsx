@@ -28,7 +28,7 @@ export const StyledStartModal = styled.div<any>`
   font-size: 18px;
   font-weight: 200;
   background-image: url(${({ src }) => src});
-  background-position: right;
+  /* background-position: right; */
   background-repeat: no-repeat;
   background-size: cover;
 `;
@@ -39,9 +39,20 @@ export const StyledModalTitle = styled.div`
   text-transform: uppercase;
   font-weight: 600;
   margin: 15px 0;
+  color: white;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+  /* text-shadow: 1px 0 white, 0 1px white, 1px 0 white, 0 1px white; */
 `;
 export const StyledModalText = styled.div`
   margin: 20px 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+
+  /* text-shadow: 1px 0 white, 0 1px white, 1px 0 white, 0 1px white; */
 `;
 export const StyledModalLink = styled.div`
   width: 240px;

@@ -31,14 +31,14 @@ export const StartModal = ({
 
   return (
     <Modal>
-      {user && <GoModal handleCloseModal={handleCloseModal} user={user}/>}
+      {user && <GoModal handleCloseModal={handleCloseModal} user={user} />}
       {!user && <StopModal handleCloseModal={handleCloseModal} />}
     </Modal>
   );
 };
 
 const GoModal = ({ handleCloseModal, user }: GoStopModalProps) => {
-  console.log(user)
+  console.log(user);
   return (
     <StyledStartModal src={winter}>
       <StyledFlexContainer justifyContent={"end"}>
@@ -52,12 +52,13 @@ const GoModal = ({ handleCloseModal, user }: GoStopModalProps) => {
           <StyledImage src={ominoFelice} style={{ height: "100%" }} />
         </StyledImageContainer>
       </StyledFlexContainer>
-      <StyledModalTitle>Tanti auguri di Buon Natale </StyledModalTitle>
+      <StyledModalTitle>Tanti auguri di</StyledModalTitle>
+      <StyledModalTitle>Buon Natale </StyledModalTitle>
       <StyledModalTitle>{user?.name}</StyledModalTitle>
       <StyledModalText>da Barbara e Anna Chiara!</StyledModalText>
       <StyledFlexContainer>
         <StyledModalLink>
-          <PaginaBiscotto user={user}/>
+          <PaginaBiscotto user={user} />
         </StyledModalLink>
       </StyledFlexContainer>
     </StyledStartModal>
@@ -74,7 +75,7 @@ const StopModal = ({ handleCloseModal }: GoStopModalProps) => {
       </StyledFlexContainer>
       <StyledFlexContainer>
         <StyledImageContainer src={sfondo2}>
-          <StyledImage src={ominoTriste} style={{ height: "100%" }} />
+          <StyledImage src={ominoTriste} />
         </StyledImageContainer>
       </StyledFlexContainer>
       <StyledModalTitle>Ci spiace!</StyledModalTitle>

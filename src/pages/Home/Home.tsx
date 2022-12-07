@@ -22,7 +22,7 @@ export const Home = ({ user, setUser }: any) => {
 
   const usersFilter = (userList: any) => {
     userList.filter((user: any) => {
-      if (user.personalCode === inputValue) {
+      if (user.personalCode.toUpperCase() === inputValue.toUpperCase()) {
         setUser(user);
       }
     });

@@ -59,6 +59,17 @@ export const userList = [
     biscotto: "Sempre meno clienti rompicoglioni attraverseranno la porta del bar",
   },
   {
+    id: "vale_sushina",
+    personalCode: "cosplay",
+    name: "Valentina",
+    biscotto: "TODO",
+  },  {
+    id: "consuelo_sushina",
+    personalCode: "tagliatella",
+    name: "Consuelo",
+    biscotto: "TODO",
+  },
+  {
     id: "federica_contaldo",
     personalCode: "viaggio disagio",
     name: "Federica",

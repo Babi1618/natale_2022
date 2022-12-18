@@ -16,7 +16,8 @@ export const userList = [
     id: "nicoletta_sushina",
     personalCode: "bamboo",
     name: "Nicoletta",
-    biscotto: "Tanti viaggi esotici per te e... un altro cassetto per Roninino!",
+    biscotto:
+      "In arrivo in questo 2023, tanti viaggi esotici per te e... un altro cassetto per Roninino!",
   },
   {
     id: "elena_sushina",
@@ -28,15 +29,14 @@ export const userList = [
     id: "isotta_sushina",
     personalCode: "after",
     name: "Isotta",
-    biscotto:
-      "Sempre piu' albe, gin tonic e divertimento.",
+    biscotto: "Sempre piu' albe, gin tonic e divertimento.",
   },
   {
     id: "sushina_madre",
     personalCode: "jason momoa",
     name: "Alice",
     biscotto:
-      "Alto, muscoloso e sguardo profondo (e possibilmente anche ricco)... niente di meno è quello che meriti! ",
+      "Alto, muscoloso e sguardo profondo (e possibilmente anche ricco)... niente di meno! E' quello che meriti! ",
   },
   {
     id: "giulia_sushina",
@@ -56,14 +56,16 @@ export const userList = [
     id: "sarah_sushina",
     personalCode: "pallavolo",
     name: "Sarah",
-    biscotto: "Sempre meno clienti rompicoglioni attraverseranno la porta del bar",
+    biscotto:
+      "Sempre meno clienti rompicoglioni attraverseranno la porta del bar.",
   },
   {
     id: "vale_sushina",
     personalCode: "cosplay",
     name: "Valentina",
     biscotto: "TODO",
-  },  {
+  },
+  {
     id: "consuelo_sushina",
     personalCode: "tagliatella",
     name: "Consuelo",
@@ -73,14 +75,14 @@ export const userList = [
     id: "federica_contaldo",
     personalCode: "viaggio disagio",
     name: "Federica",
-    biscotto: "Vuoi vedere il muro del pianto ma dentro hai solo gioia.",
+    biscotto:
+      "Vuoi vedere il muro del pianto ma dentro hai solo tanta, tantissima gioia.",
   },
   {
     id: "dalila_longo",
     personalCode: "berlino",
     name: "Dalila",
-    biscotto:
-      "Ti aspettano nuove avventure, chissà da chi arriveranno.",
+    biscotto: "Ti aspettano nuove avventure, chissà da chi arriveranno.",
   },
   {
     id: "pierluca",
@@ -126,7 +128,8 @@ export const userList = [
     id: "elena_squinzia",
     personalCode: "chic",
     name: "Elena",
-    biscotto: "Moda, bellezza e meravigliosi modelli toy!",
+    biscotto:
+      "Moda, bellezza e meravigliosi modelli toy! Ti aspetta un 2023 all'insegna del fashion!",
   },
   {
     id: "valeria_squinzia",
@@ -139,18 +142,28 @@ export const userList = [
     id: "samantha_squinzia",
     personalCode: "professora",
     name: "Samantha",
-    biscotto: "TODO",
+    biscotto:
+      "Ti aspetta un 2023 carico di felicità, divertimento e soddisfazioni lavorative!",
   },
   {
     id: "marco_faboba",
     personalCode: "britney",
     name: "Marco",
-    biscotto: "Cazzi cazzi e ancora cazzi... non potremmo farti un augurio migliore!",
+    biscotto:
+      "Cazzi cazzi e ancora cazzi... non potremmo farti un augurio migliore!",
   },
   {
     id: "sabrina_lame",
     personalCode: "buon natale",
     name: "Sabrina",
-    biscotto: "Gioia, felicità e serenità! E tanto tempo allegro passato in famiglia!",
+    biscotto:
+      "Questo 2023 ti porterà tanta gioia, felicità e serenità! E tanto tempo allegro passato in famiglia!",
+  },
+  {
+    id: "oriana_lime",
+    personalCode: "IMBA",
+    name: "Oriana",
+    biscotto:
+      "Donna in carriera, coach di muay-thay, insomma ora divertiti e rilassati!",
   },
 ];

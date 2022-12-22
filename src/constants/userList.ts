@@ -166,4 +166,11 @@ export const userList = [
     biscotto:
       "Donna in carriera, coach di muay-thay, insomma ora divertiti e rilassati!",
   },
+  {
+    id: "angelina_lame",
+    personalCode: "dinamite",
+    name: "Angelina",
+    biscotto:
+      "Sempre un vulcano di energie! Continua così e vedrai che il 2023 ti regalerà molte sorprese :)",
+  },
 ];

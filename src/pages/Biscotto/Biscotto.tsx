@@ -10,6 +10,7 @@ import { StyledModalText } from "../../components/general/Modal/Modal.styled";
 import { Link } from "react-router-dom";
 
 export const PaginaBiscotto = ({ user }: any) => {
+  console.log(user);
   const [isBiscottoOpen, setIsBiscottoOpen] = useState<boolean>(false);
 
   return (

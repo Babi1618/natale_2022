@@ -14,7 +14,6 @@ import { StartModal } from "../../components/Modals/StartModal";
 import { Snow } from "../../components/general/Snow/Snow";
 import { StyledPageIntoSnow } from "../../components/general/Snow/Snow.styled";
 import { fetchData } from "../../utils/api";
-// import { userList } from "../../constants/userList";
 
 export const Home = ({ user, setUser }: any) => {
   const [isStartModalOpen, setIsStartModalOpen] = useState<boolean>(false);
@@ -26,10 +25,6 @@ export const Home = ({ user, setUser }: any) => {
     setUserList(users);
   }, []);
 
-  useEffect(() => {
-    getData();
-  }, [getData]);
-
   const usersFilter = (userList: any) => {
     userList.filter((user: any) => {
       if (user.personalCode.toUpperCase() === inputValue.toUpperCase()) {
@@ -38,11 +33,14 @@ export const Home = ({ user, setUser }: any) => {
     });
   };
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     usersFilter(userList);
     setIsStartModalOpen(true);
-  };
+  },[usersFilter]);
 
+  useEffect(() => {
+    getData();
+  }, [getData]);
   return (
     <>
       <Snow></Snow>

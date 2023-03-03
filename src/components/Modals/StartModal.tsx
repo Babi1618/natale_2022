@@ -4,7 +4,7 @@ import {
   StyledImage,
   StyledImageContainer,
 } from "../../pages/Home/Home.styled";
-import { User } from "../../utils/interfaces";
+// import { User } from "../../utils/interfaces";
 import { Modal } from "../general/Modal/Modal";
 import {
   StyledModalCloseButton,
@@ -19,6 +19,7 @@ import ominoTriste from "../../assets/omino_triste.png";
 
 import winter from "../../assets/winter.jpg";
 import { PaginaBiscotto } from "../../pages/Biscotto/Biscotto";
+import { UserProps } from "../../utils/interfaces";
 export const StartModal = ({
   setIsStartModalOpen,
   user,
@@ -38,7 +39,6 @@ export const StartModal = ({
 };
 
 const GoModal = ({ handleCloseModal, user }: GoStopModalProps) => {
-  // console.log(user);
   return (
     <StyledStartModal src={winter}>
       <StyledFlexContainer justifyContent={"end"}>
@@ -91,10 +91,10 @@ const StopModal = ({ handleCloseModal }: GoStopModalProps) => {
 
 interface StartModalProps {
   setIsStartModalOpen: any;
-  user: User | null;
+  user: UserProps | null;
   setValue: any;
 }
 interface GoStopModalProps {
-  user?: User | undefined;
+  user?: UserProps | undefined;
   handleCloseModal: any;
 }

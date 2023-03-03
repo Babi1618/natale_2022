@@ -38,7 +38,7 @@ export const StartModal = ({
 };
 
 const GoModal = ({ handleCloseModal, user }: GoStopModalProps) => {
-  console.log(user);
+  // console.log(user);
   return (
     <StyledStartModal src={winter}>
       <StyledFlexContainer justifyContent={"end"}>

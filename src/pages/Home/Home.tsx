@@ -9,16 +9,26 @@ import {
   StyledTextContainer,
 } from "./Home.styled";
 import sfondo from "../../assets/sfondo.jpg";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { StartModal } from "../../components/Modals/StartModal";
 import { Snow } from "../../components/general/Snow/Snow";
 import { StyledPageIntoSnow } from "../../components/general/Snow/Snow.styled";
-import { userList } from "../../constants/userList";
+import { fetchData } from "../../utils/api";
 // import { userList } from "../../constants/userList";
 
 export const Home = ({ user, setUser }: any) => {
   const [isStartModalOpen, setIsStartModalOpen] = useState<boolean>(false);
   const [inputValue, setInputValue] = useState<string>("");
+  const [userList, setUserList] = useState([]);
+
+  const getData = useCallback(async () => {
+    const users = await fetchData();
+    setUserList(users);
+  }, []);
+
+  useEffect(() => {
+    getData();
+  }, [getData]);
 
   const usersFilter = (userList: any) => {
     userList.filter((user: any) => {

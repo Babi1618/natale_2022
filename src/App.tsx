@@ -7,7 +7,6 @@ import { Personal } from "./pages/Personal/Personal";
 
 function App() {
   const [user, setUser] = useState<User | null>(null);
-console.log(user)
   return (
     <BrowserRouter>
       <Routes>

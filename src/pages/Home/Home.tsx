@@ -18,11 +18,19 @@ import { fetchData } from "../../utils/api";
 export const Home = ({ user, setUser }: any) => {
   const [isStartModalOpen, setIsStartModalOpen] = useState<boolean>(false);
   const [inputValue, setInputValue] = useState<string>("");
-  const [userList, setUserList] = useState([]);
+  const [userList, setUserList] = useState([
+    {
+      id: "mock_user",
+      personalCode: "user",
+      name: "User",
+      biscotto:
+        "Benvenuto nella mia App di Natale! Questo biscotto ti porterà molta fortuna!",
+    },
+  ]);
 
   const getData = useCallback(async () => {
     const users = await fetchData();
-    setUserList(users);
+    setUserList([...userList, users]);
   }, []);
 
   const usersFilter = (userList: any) => {
@@ -36,7 +44,7 @@ export const Home = ({ user, setUser }: any) => {
   const handleClick = useCallback(() => {
     usersFilter(userList);
     setIsStartModalOpen(true);
-  },[usersFilter]);
+  }, [usersFilter]);
 
   useEffect(() => {
     getData();
